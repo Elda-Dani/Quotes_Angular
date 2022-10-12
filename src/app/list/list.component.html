@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-success">
+                <thead class="table-inso">
+                  <tr>
+                   
+                    <th scope="col">Id</th>
+                    <th scope="col">Quotes</th>
+                    <th scope="col">Author</th>
+                   
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr *ngFor="let i of quoteData.quotes">
+                    
+                    <td>{{i.id}}</td>
+                    <td>{{i.quote}}</td>
+                    <td>{{i.author}}</td>
+                   
+
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+
+        </div>
+    </div>
+</div>
+
